@@ -1,0 +1,173 @@
+/* ヘッダー全体 */
+.header {
+    box-shadow: 1px 1px 10px -5px #898989;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+/* ヘッダー　タイトル */
+.header
+> .header_title {
+    padding: 15px;
+    font-size: 2rem;
+}
+
+/* メインコンテンツ */
+
+/* メインコンテンツ　「＋」追加ボタンブロック全体 */
+.main
+> .main_add-button {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 25px 15px;
+}
+
+/* メインコンテンツ　「＋」追加ボタン */
+.main
+> .main_add-button
+> .main_add-button_new-card {
+    /* align-self: flex-end; */
+    font-size: 2rem;
+    /* border: none; */
+    /* background-color: white !important; */
+    padding: 0;
+    /* line-height: 0; */
+}
+.main
+> .main_add-button
+> .main_add-button_new-card:hover {
+    cursor: pointer;
+}
+
+/* メインコンテンツ　コンテンツエリア */
+.main
+> .main_area {
+    width: 80%;
+    margin: 40px auto;
+    
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム　全体 */
+.main
+> .main_area
+> .main_area_form {
+    width: 400px;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 3px 3px 8px 0px #898989;
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_title,
+.main 
+> .main_area
+> .main_area_form
+> .main_area_form_text {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム　タイトル */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_title
+> .main_area_form_title_label {
+    font-size: 1.2rem;
+    width: 30%;
+    padding: 0 0 0 10px;
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム　タイトル 入力欄全体 */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_title
+> .main_area_form_title_input {
+    width: 70%;
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム　タイトル 入力欄 */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_title
+> .main_area_form_title_input
+> input {
+    width: 250px;
+    padding: 0 0 5px 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid #898989;
+    background-color: #f6f6f6;
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム　「コンテンツ」 */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_text
+> .main_area_form_text_label {
+    font-size: 1.2rem;
+    width: 30%;
+    padding: 0 0 0 10px;
+
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム　テキスト　入力欄全体 */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_text
+> .main_area_form_text_textarea {
+    width: 70%;
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム　テキスト　入力欄 */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_text
+> .main_area_form_text_textarea
+> textarea {
+    max-width: 255px;
+    min-width: 255px;
+    height: 75px;
+    width: 265px;
+    border: none;
+    border-bottom: 1px solid #898989;
+    background-color: #f6f6f6;
+    resize: none;
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム　「送信」ボタン　ブロック */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_create-button {
+    text-align: end;
+    padding: 15px 15px 0 0;
+}
+
+/* メインコンテンツ　コンテンツ追加フォーム　「送信」ボタン　ブロック */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_create-button
+> button {
+    width: 100px;
+    background: #08aeea;
+}
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_create-button
+> button:hover {
+    background: #055d7e;
+    color: #f6f6f6;
+}

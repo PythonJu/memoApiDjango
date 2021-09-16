@@ -37,3 +37,7 @@ def memo_detail(request, pk):
             serializer.save()
             return JsonResponse(serializer.data, status=status.HTTP_200_OK)
         return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    if request.method == 'DELETE':
+        memo.delete()
+        return JsonResponse(data={'message': 'successed'}, status=status.HTTP_204_NO_CONTENT)

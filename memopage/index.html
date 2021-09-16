@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body  id="create_form" style="display: none;">
+    <header class="header">
+        <h1 class="header_title">Django memo app</h1>
+    </header>
+    <main class="main">
+        <div class="main_add-button">
+            <button class="main_add-button_new-card" id="create_toggle_button">+</button>
+        </div>
+        <div class="main_area">
+            <div class="main_area_form" >
+                <div class="main_area_form_title">
+                    <label class="main_area_form_title_label">タイトル</label>
+                    <div class="main_area_form_title_input">
+                        <input class="form-text form-common" type="text" id="title"  name="create-data">
+                    </div>
+                </div>
+                <div class="main_area_form_text">
+                    <label class="main_area_form_text_label">コンテンツ</label>
+                    <div class="main_area_form_text_textarea">
+                        <textarea class="form-textarea form-common" id="content" name="create-data"></textarea>
+                    </div>
+                </div>
+                <div class="main_area_form_create-button">
+                    <button id="create_button" class="create-button">
+                        <span class="create-button-text">送信</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- テキストエリア用のjs -->
+    <script src="./assets/js/textarea.js"></script>
+    <!-- 追加コンテンツするための　djangoサーバー通信用js -->
+    <script src="./assets/js/django.js"></script>
+    <!-- 追加コンテンツフォームを画面から出現および消失させる用js -->
+    <script src="./assets/js/addcontents.js"></script>
+</body>
+</html>
