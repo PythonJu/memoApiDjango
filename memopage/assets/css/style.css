@@ -16,13 +16,8 @@
 /* メインコンテンツ　「＋」追加ボタンブロック全体 */
 .main
 > .main_add-button {
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
-=======
-    /* display: flex; */
-    /* flex-direction: column; */
->>>>>>> 2e576d529c3594434eeb2130026729619cb79a8d
     margin: 25px 15px;
 }
 
@@ -30,21 +25,12 @@
 .main
 > .main_add-button
 > .main_add-button_new-card {
-<<<<<<< HEAD
     align-self: flex-end;
     font-size: 2rem;
     border: none;
     background-color: white !important;
     padding: 0;
     line-height: 0;
-=======
-    /* align-self: flex-end; */
-    font-size: 2rem;
-    /* border: none; */
-    /* background-color: white !important; */
-    padding: 0;
-    /* line-height: 0; */
->>>>>>> 2e576d529c3594434eeb2130026729619cb79a8d
 }
 .main
 > .main_add-button
@@ -56,7 +42,7 @@
 .main
 > .main_area {
     width: 80%;
-    margin: 40px auto;
+    margin: 40px auto 80px;
     
 }
 
@@ -79,7 +65,12 @@
 .main 
 > .main_area
 > .main_area_form
-> .main_area_form_text {
+> .main_area_form_text,
+.main
+> .second_detail
+> .second_detail_memo
+> .second_detail_memo_content
+> .second_detail_memo_content_title {
     width: 100%;
     padding: 10px 0;
     display: flex;
@@ -95,6 +86,7 @@
     font-size: 1.2rem;
     width: 30%;
     padding: 0 0 0 10px;
+    line-height: 33px;
 }
 
 /* メインコンテンツ　コンテンツ追加フォーム　タイトル 入力欄全体 */
@@ -114,7 +106,7 @@
 > .main_area_form_title_input
 > input {
     width: 250px;
-    padding: 0 0 5px 10px;
+    padding: 5px 0 5px 10px;
     font-size: 1.2rem;
     border: none;
     border-bottom: 1px solid #898989;
@@ -184,4 +176,215 @@
 > button:hover {
     background: #055d7e;
     color: #f6f6f6;
+    cursor: pointer;
+}
+
+/* セカンドコンテンツーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+/* セカンドコンテンツ全体 */
+.second
+> .second_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    /* align-self: flex-start; */
+    /* flex-direction: column; */
+    width: 80%;
+    margin: 40px auto;
+}
+/* .second
+> .second_content:after {
+    content: "";
+    display: block;
+    width: 75%;
+    height:0;
+} */
+
+/* セカンドコンテンツ　コンテンツカード */
+.second
+> .second_content
+> .second_content_card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 180px;
+    height: 90px;
+    background-color: #f6f6f6;
+    margin: 15px auto;
+    padding: 20px;
+    box-shadow: 3px 3px 8px 0px #898989;
+}
+
+/* セカンドコンテンツ　コンテンツカード　タイトル */
+.second
+> .second_content
+> .second_content_card
+> .second_content_card_title {
+    padding-bottom: 10px;
+    margin: 0 auto 10px;
+    border-bottom: 1px solid #898989;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* セカンドコンテンツ　コンテンツカード　タイトル文 */
+.second
+> .second_content
+> .second_content_card
+> .second_content_card_title
+> p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* セカンドコンテンツ　コンテンツカード　テキスト */
+.second
+> .second_content
+> .second_content_card
+> .second_content_card_text {
+    font-size: 0.8rem;
+    line-height: 15px;
+    height: 2.6rem;
+    overflow: hidden;
+}
+
+/* セカンドコンテンツ　コンテンツカード　テキスト文 */
+.second
+> .second_content
+> .second_content_card
+> .second_content_card_text
+> p {
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    height: 3.2rem;
+    /* text-overflow: ellipsis; */
+}
+
+/* セカンドコンテンツ　コンテンツカード　詳細ボタン欄 */
+.second
+> .second_content
+> .second_content_card
+> .second_content_card_button {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    text-align: right;
+    margin: 10px 0;
+    font-size: 0.6rem;
+}
+.second
+> .second_content
+> .second_content_card
+> .second_content_card_button:hover {
+    cursor: pointer;
+}
+
+/* コンテンツ詳細画面ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* セカンドコンテンツ　コンテンツ詳細画面 全体 */
+.main
+> .second_detail {
+    z-index: 1;
+    position: fixed;
+    /* htmlに直接記述するときのみ */
+    display: flex; 
+    top: -90px;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* セカンドコンテンツ　コンテンツ詳細画面 メモカード全体*/
+.main
+> .second_detail
+> .second_detail_memo {
+    margin: 120px auto;
+    /* height: 40%; */
+}
+
+/* セカンドコンテンツ　コンテンツ詳細画面　「×」クローズボタンエリア */
+.main
+> .second_detail
+> .second_detail_memo
+> .second_detail_memo_close {
+    text-align: right;
+    font-weight: 100;
+}
+
+/* セカンドコンテンツ　コンテンツ詳細画面　「×」クローズボタン */
+.main
+> .second_detail
+> .second_detail_memo
+> .second_detail_memo_close 
+> .second_detail_memo_close_button {
+    color: #999;
+    font-size: 3rem;
+    background-color: white;
+    padding: 0;
+    line-height: 0;
+    border: none;
+    margin: 10px auto;
+}
+.main
+> .second_detail
+> .second_detail_memo
+> .second_detail_memo_close 
+> .second_detail_memo_close_button:hover {
+    cursor: pointer;
+    color: #353535;
+}
+
+/* セカンドコンテンツ　コンテンツ詳細画面　「コンテンツ」　テキストエリア */
+#content2 {
+    height: 270px;
+}
+
+/* セカンドコンテンツ　コンテンツ詳細画面　「編集」「削除」ボタン欄全体 */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_option {
+    text-align: right;
+    padding: 20px 7px;
+}
+
+/* セカンドコンテンツ　コンテンツ詳細画面　「編集」ボタン */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_option
+> .main_area_form_option_edit-button {
+    width: 100px;
+    background: #08aeea;
+    margin-right: 17px;
+}
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_option
+> .main_area_form_option_edit-button:hover {
+    background: #055d7e;
+    color: #f6f6f6;
+    cursor: pointer;
+}
+
+/* セカンドコンテンツ　コンテンツ詳細画面　「削除」ボタン */
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_option
+> .main_area_form_option_delete-button {
+    width: 100px;
+    background: #d42121;
+}
+.main
+> .main_area
+> .main_area_form
+> .main_area_form_option
+> .main_area_form_option_delete-button:hover {
+    background: #990b0b;
+    color: #999;
+    cursor: pointer;
 }

@@ -8,37 +8,26 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<<<<<<< HEAD
 <body>
-=======
-<body  id="create_form" style="display: none;">
->>>>>>> 2e576d529c3594434eeb2130026729619cb79a8d
     <header class="header">
         <h1 class="header_title">Django memo app</h1>
     </header>
     <main class="main">
-<<<<<<< HEAD
         <div class="main_add-button" id="create_toggle_button">
             <button class="main_add-button_new-card">+</button>
         </div>
         <div class="main_area" id="create_form" style="display: none;">
-=======
-        <div class="main_add-button">
-            <button class="main_add-button_new-card" id="create_toggle_button">+</button>
-        </div>
-        <div class="main_area">
->>>>>>> 2e576d529c3594434eeb2130026729619cb79a8d
             <div class="main_area_form" >
                 <div class="main_area_form_title">
                     <label class="main_area_form_title_label">タイトル</label>
                     <div class="main_area_form_title_input">
-                        <input class="form-text form-common" type="text" id="title"  name="create-data">
+                        <input class="" type="text" id="title"  name="create-data">
                     </div>
                 </div>
                 <div class="main_area_form_text">
                     <label class="main_area_form_text_label">コンテンツ</label>
                     <div class="main_area_form_text_textarea">
-                        <textarea class="form-textarea form-common" id="content" name="create-data"></textarea>
+                        <textarea class="" id="content" name="create-data"></textarea>
                     </div>
                 </div>
                 <div class="main_area_form_create-button">
@@ -48,12 +37,18 @@
                 </div>
             </div>
         </div>
+        <div class="main_area second_detail" id="detail_memo" style="display:none"></div>
     </main>
+    <second class="second">
+        <div class="second_content" id="view_memos"></div>
+    </second>
     <!-- テキストエリア用のjs -->
     <script src="./assets/js/textarea.js"></script>
-    <!-- 追加コンテンツするための　djangoサーバー通信用js -->
+    <!-- コンテンツを追加するための　djangoサーバー通信用js -->
     <script src="./assets/js/django.js"></script>
     <!-- 追加コンテンツフォームを画面から出現および消失させる用js -->
     <script src="./assets/js/addcontents.js"></script>
+    <!-- 画面ロード時に、今サーバーにあるデータを読み込む　djangoサーバー通信用js -->
+    <!-- <script src="./assets/js/getApi.js"></script> -->
 </body>
 </html>
