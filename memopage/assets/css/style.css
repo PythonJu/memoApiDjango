@@ -16,8 +16,13 @@
 /* メインコンテンツ　「＋」追加ボタンブロック全体 */
 .main
 > .main_add-button {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
+=======
+    /* display: flex; */
+    /* flex-direction: column; */
+>>>>>>> 2e576d529c3594434eeb2130026729619cb79a8d
     margin: 25px 15px;
 }
 
@@ -25,12 +30,21 @@
 .main
 > .main_add-button
 > .main_add-button_new-card {
+<<<<<<< HEAD
     align-self: flex-end;
     font-size: 2rem;
     border: none;
     background-color: white !important;
     padding: 0;
     line-height: 0;
+=======
+    /* align-self: flex-end; */
+    font-size: 2rem;
+    /* border: none; */
+    /* background-color: white !important; */
+    padding: 0;
+    /* line-height: 0; */
+>>>>>>> 2e576d529c3594434eeb2130026729619cb79a8d
 }
 .main
 > .main_add-button
